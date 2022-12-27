@@ -12,8 +12,6 @@ This tool provides a statistics on cache perfomance for L1 and L2 Cache configur
 
 ### Executing program
 
-* How to run the program
-* Step-by-step bullets
 ```
 make all 
 python3 run_script.py
