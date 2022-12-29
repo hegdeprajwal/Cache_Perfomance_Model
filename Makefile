@@ -1,5 +1,5 @@
 CC = g++
-CFLAGS = -std=c++11 -Wall -Wextra -Werror
+CFLAGS = -std=c++11 -Wall
 
 all: run
 

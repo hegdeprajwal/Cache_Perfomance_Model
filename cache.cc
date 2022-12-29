@@ -166,21 +166,21 @@ void Cache::cache_miss_mgmt (int set, unsigned long long tag, int rw) {
 
 void Cache::print_stats () {
 
-    cout << "Number of sets : "  << this->num_sets << "\n";
-    cout << "Number of ways : "  << this->num_ways << "\n\n";
+    cout << "l1_sets : "  << this->num_sets << "\n";
+    cout << "l1_ways : "  << this->num_ways << "\n\n";
 
-    cout << "Total Number of access : " << cache_stats.reads+cache_stats.writes << "\n";
-    cout << "Read hit : "  << this->cache_stats.read_hits << "\n";
-    cout << "Read miss : "  << this->cache_stats.read_miss << "\n";
-    cout << "Write hit : "  << this->cache_stats.write_hits << "\n";
-    cout << "Write Miss : "  << this->cache_stats.write_miss << "\n";
+    cout << "l1_total_acces : " << cache_stats.reads+cache_stats.writes << "\n";
+    cout << "l1_Read_hit : "  << this->cache_stats.read_hits << "\n";
+    cout << "l1_Read_miss : "  << this->cache_stats.read_miss << "\n";
+    cout << "l1_Write_hit : "  << this->cache_stats.write_hits << "\n";
+    cout << "l1_Write_Miss : "  << this->cache_stats.write_miss << "\n";
 
     cout.setf(ios::fixed, ios::floatfield);
 double l1_miss_rate = double(this->cache_stats.read_miss + this->cache_stats.write_miss)
                       / (this->cache_stats.reads + this->cache_stats.writes);
 
     
-    cout << "Miss Rate : "  << l1_miss_rate << "\n";
+    cout << "l1_Miss_Rate : "  << l1_miss_rate << "\n";
 
 }
 

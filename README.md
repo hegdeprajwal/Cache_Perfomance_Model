@@ -7,7 +7,8 @@ This tool provides a statistics on cache perfomance for L1 and L2 Cache configur
 
 ### Dependencies
 
-*Python3 
+Python3 
+pip install matplotlib
 
 
 ### Executing program
